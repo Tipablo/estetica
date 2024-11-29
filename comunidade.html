@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade - Leticia Rodrigues</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="botao-navegacao" data-pagina="index.html">Home</button>
+            <button class="botao-navegacao" data-pagina="comunidade.html">Comunidade</button>
+            <button class="botao-navegacao" data-pagina="tutorial.html">Tutorial</button>
+            <button class="botao-navegacao" data-pagina="open-source.html">Open Source</button>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <h1>Comunidade</h1>
+        <section class="forum">
+            <h2 class="titulo-forum">Discussões da Comunidade</h2>
+            <textarea class="campo-comentario" placeholder="Escreva seu comentário aqui..."></textarea>
+            <button class="botao-enviar">Enviar</button>
+            <div class="comentarios">
+                <h3>Comentários Recentes</h3>
+                <ul id="lista-comentarios">
+                    <!-- Comentários serão inseridos aqui -->
+                </ul>
+            </div>
+        </section>
+
+        <section class="enquete">
+            <h3>Enquete do Dia</h3>
+            <p>Qual produto você mais usa?</p>
+            <form id="form-enquete" onsubmit="return false;"> <!-- Previne o envio do formulário -->
+                <label>
+                    <input type="radio" name="produto" value="creme" onchange="updatePoll()"> Creme
+                    <span class="porcentagem" id="creme-percent">0%</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="produto" value="batom" onchange="updatePoll()"> Batom
+                    <span class="porcentagem" id="batom-percent">0%</span>
+                </label><br>
+                <label>
+                    <input type="radio" name="produto" value="base" onchange="updatePoll()"> Base
+                    <span class="porcentagem" id="base-percent">0%</span>
+                </label><br>
+                <button type="submit" class="botao-enviar">Votar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Leticia Rodrigues - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

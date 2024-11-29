@@ -1,0 +1,353 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background: #ff6f61; /* Cor de fundo suave */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.cabeçalho-imagem {
+  width: 80px;
+  height: auto;
+  border-radius: 50%; /* Logo circular */
+}
+
+/* Navegação */
+.navegacao {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.navegacao li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.cabeçalho-menu-item {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s; /* Transição suave */
+}
+
+.cabeçalho-menu-item:hover {
+  color: #ffe0b2; /* Efeito ao passar o mouse */
+  text-shadow: 0 0 10px #ffe0b2; /* Sombra de texto ao passar o mouse */
+}
+
+/* Conteúdo principal */
+.conteudo {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px; /* Limitar a largura do conteúdo */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #ff6f61; /* Cor dos títulos */
+  margin-bottom: 10px; /* Margem inferior para espaçamento */
+}
+
+button.conteudo-principal-escrito {
+  background-color: #ff6f61; /* Cor do botão */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Transições para efeitos */
+}
+
+button.conteudo-principal-escrito:hover {
+  background-color: #ff3d33; /* Efeito ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* Conteúdo secundário */
+.conteudo-secundario-lista {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0; /* Remove o padding padrão */
+}
+
+.conteudo-secundario-lista li {
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  padding: 20px 0;
+  background: #ff6f61;
+  color: white;
+  margin-top: 20px;
+}
+
+.rodape-imagem {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .navegacao li {
+    display: block; /* Exibe a navegação em formato de lista vertical */
+    margin: 10px 0;
+  }
+
+  .conteudo {
+    margin: 10px; /* Reduz a margem em telas pequenas */
+    padding: 15px; /* Reduz o padding em telas pequenas */
+  }
+
+  h1 {
+    font-size: 1.8em; /* Ajusta o tamanho da fonte do título principal */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Ajusta o tamanho da fonte do subtítulo */
+  }
+
+  button.conteudo-principal-escrito {
+    width: 100%; /* Botão ocupa toda a largura em dispositivos móveis */
+    padding: 12px; /* Aumenta o padding para facilitar o toque */
+  }
+}
+/* Discussão da Comunidade */
+.forum {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.campo-comentario {
+  width: 100%;
+  height: 120px; /* Aumenta a altura da caixa */
+  padding: 15px;
+  border-radius: 12px; /* Borda mais arredondada */
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+  resize: none;
+}
+
+/* Botão Enviar */
+.botao-enviar {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-enviar:hover {
+  background-color: #ff3d33;
+}
+
+/* Enquete */
+.enquete h3, 
+.enquete p {
+  color: #ff6f61; /* Cor do título e pergunta */
+}
+
+.enquete label {
+  font-size: 1rem;
+  color: #ff6f61; /* Cor do texto das opções */
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.enquete .porcentagem {
+  font-weight: bold;
+  margin-left: 5px;
+  color: #333; /* Colore as porcentagens em um tom neutro */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .campo-comentario {
+      height: 100px; /* Ajusta a altura em telas menores */
+  }
+
+  .botao-enviar {
+      width: 100%;
+      padding: 12px;
+  }
+}
+/* Estilos para a seção Tutorial */
+.tutorial {
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px; /* Borda arredondada */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.tutorial-passo {
+  background-color: #fff5f3; /* Fundo claro para destacar as caixas */
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Borda arredondada */
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.tutorial-passo:hover {
+  transform: scale(1.02); /* Pequeno efeito de zoom ao passar o mouse */
+}
+
+/* Estilo dos textos das etapas */
+.tutorial-passo h4 {
+  color: #ff6f61; /* Cor das palavras importantes */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .tutorial {
+      padding: 15px; /* Ajuste de padding para telas menores */
+  }
+
+  .tutorial-passo {
+      padding: 12px; /* Reduz o padding em telas menores */
+  }
+}
+/* Seção de Projetos */
+.projetos {
+  padding: 20px;
+  background-color: #fff5f3; /* Fundo suave */
+  border-radius: 12px; /* Arredondar os cantos */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.projetos h2 {
+  color: #ff6f61; /* Cor do título */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.projetos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projetos li {
+  margin-bottom: 10px;
+}
+
+.projetos a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  background-color: #ff6f61; /* Cor de fundo dos links */
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px; /* Arredondar os links */
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projetos a:hover {
+  background-color: #ff3d33; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* Seção de Contribuição */
+.contribua {
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contribua h2 {
+  color: #ff6f61;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contribua p {
+  text-align: center;
+  color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .projetos a {
+      font-size: 1em;
+      padding: 12px;
+  }
+}
+/* Estilo do link de Instagram na seção Contribua */
+.contribua p {
+  color: #333;
+  text-align: center;
+  font-size: 1em;
+}
+
+.instagram-link {
+  color: #ff6f61; /* Cor da marcação principal */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.instagram-link:hover {
+  color: #ff3d33; /* Cor ao passar o mouse */
+  text-decoration: underline; /* Destaque ao passar o mouse */
+}
+/* Estilos para os botões de navegação */
+.botao-navegacao {
+  background-color: #ff6f61; /* Cor de fundo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* Torna o botão mais arredondado */
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao-navegacao:hover {
+  background-color: #ff3d33; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.botao-navegacao:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 111, 97, 0.7); /* Destaque ao focar */
+}

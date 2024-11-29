@@ -1,0 +1,23 @@
+css
+Copiar código
+/* Estilo geral para os botões de navegação */
+nav button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para mudança de cor */
+}
+
+nav button:hover {
+    background-color: #45a049; /* Cor mais escura ao passar o mouse */
+}
+
+nav {
+    text-align: center; /* Centraliza os botões */
+    margin-bottom: 20px; /* Espaço abaixo da navegação */
+}
